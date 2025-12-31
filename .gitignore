@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual Envs
+.venv/
+venv/
+env/
+
+# Output & logs
+output/
+logs/
+
+# Backups & trash
+backup_*/
+_trash_backup/
+_uncategorized/
+unclassified/
+
+# Data caches
+*.csv
+*.json
+!market_weights.json
+!etf_map.json
+!ticker_aliases.json
+!ticker_db_enhanced.json
+!ticker_sectors.json
+
+# External source tree
+HKSI-main/
+
+# VS Code
+.vscode/

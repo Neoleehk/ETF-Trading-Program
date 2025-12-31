@@ -1,0 +1,14 @@
+{
+  "technology": {"US": "XLK", "HK": "3020.HK", "CN": "512760.SH", "inverseUS": "TECS"},
+  "financials": {"US": "XLF", "HK": "3086.HK", "CN": "512800.SH", "inverseUS": "FAZ"},
+  "industrials": {"US": "XLI", "HK": "2800.HK", "CN": "516950.SH", "inverseUS": ""},
+  "consumer": {"US": "XLY", "HK": "3081.HK", "CN": "159936.SZ", "inverseUS": ""},
+  "energy": {"US": "XLE", "HK": "3084.HK", "CN": "159945.SZ", "inverseUS": "ERY"},
+  "materials": {"US": "XLB", "HK": "3085.HK", "CN": "515220.SH", "inverseUS": ""},
+  "health": {"US": "XLV", "HK": "3115.HK", "CN": "512010.SH", "inverseUS": ""},
+  "real estate": {"US": "XLRE", "HK": "2800.HK", "CN": "515060.SH", "inverseUS": "DRV"}
+  ,
+  "consumer staples": {"US": "XLP", "HK": "2800.HK", "CN": "159928.SZ", "inverseUS": ""},
+  "utilities": {"US": "XLU", "HK": "2800.HK", "CN": "159611.SZ", "inverseUS": ""},
+  "communication services": {"US": "XLC", "HK": "2800.HK", "CN": "512980.SH", "inverseUS": ""}
+}

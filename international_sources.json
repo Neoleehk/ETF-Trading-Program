@@ -1,0 +1,111 @@
+{
+  "international_sources": {
+    "reuters": {
+      "name": "Reuters",
+      "type": "rss",
+      "base_url": "https://www.reuters.com",
+      "feeds": [
+        {
+          "name": "Business News",
+          "url": "https://feeds.reuters.com/reuters/businessNews",
+          "sectors": ["financials", "energy", "materials", "industrials"]
+        },
+        {
+          "name": "Technology News", 
+          "url": "https://feeds.reuters.com/news/technology",
+          "sectors": ["technology", "communication services"]
+        },
+        {
+          "name": "Markets News",
+          "url": "https://feeds.reuters.com/reuters/markets", 
+          "sectors": ["financials", "real estate"]
+        }
+      ],
+      "enabled": true,
+      "priority": "high",
+      "update_frequency": "1h",
+      "timeout": 30
+    },
+    
+    "sec_gov": {
+      "name": "SEC.gov",
+      "type": "rss", 
+      "base_url": "https://www.sec.gov",
+      "feeds": [
+        {
+          "name": "Press Releases",
+          "url": "https://www.sec.gov/news/pressreleases.rss",
+          "sectors": ["financials", "technology", "energy"]
+        }
+      ],
+      "enabled": true,
+      "priority": "high",
+      "update_frequency": "6h",
+      "timeout": 30
+    },
+    
+    "federal_reserve": {
+      "name": "Federal Reserve",
+      "type": "web",
+      "base_url": "https://www.federalreserve.gov", 
+      "feeds": [
+        {
+          "name": "Latest News",
+          "url": "https://www.federalreserve.gov/newsevents.htm",
+          "sectors": ["financials"]
+        }
+      ],
+      "enabled": true,
+      "priority": "high", 
+      "update_frequency": "12h",
+      "timeout": 30
+    },
+    
+    "guardian": {
+      "name": "The Guardian",
+      "type": "api",
+      "base_url": "https://content.guardianapis.com",
+      "api_endpoint": "https://content.guardianapis.com/search",
+      "api_key": "YOUR_API_KEY_HERE",
+      "feeds": [
+        {
+          "name": "Business",
+          "query": "section=business",
+          "sectors": ["financials", "energy", "materials"]
+        },
+        {
+          "name": "Technology",
+          "query": "section=technology", 
+          "sectors": ["technology"]
+        }
+      ],
+      "enabled": false,
+      "priority": "high",
+      "update_frequency": "2h",
+      "timeout": 30,
+      "rate_limit": {
+        "requests_per_day": 1000,
+        "requests_per_minute": 10
+      }
+    }
+  },
+  
+  "settings": {
+    "default_timeout": 30,
+    "retry_attempts": 3,
+    "retry_delay": 5,
+    "user_agent": "HKSI News Aggregator 1.0",
+    "enable_proxy": false,
+    "proxy_list": [],
+    "default_market": "INTL",
+    "content_language": "en",
+    "max_articles_per_source": 50
+  },
+  
+  "classification": {
+    "file_prefix": "INTL",
+    "enable_translation": false,
+    "enhanced_english_keywords": true,
+    "cross_reference_sources": true
+  }
+}
